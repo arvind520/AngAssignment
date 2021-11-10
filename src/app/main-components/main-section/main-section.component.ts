@@ -98,6 +98,7 @@ export class MainSectionComponent implements OnInit, OnChanges {
   //! Show value changes
   SetShowValue(shwValue: any) {
     this.showValue = shwValue.target.value;
+    this.selectedPageNumber = 1;
     this.resetAll();
     console.log(this.showValue);
   }
