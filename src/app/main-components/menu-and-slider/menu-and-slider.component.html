@@ -1,0 +1,142 @@
+<div class="path">
+  <div class="container">
+    <h4 class="my-4">
+      <span style="color: deepskyblue">Home</span> /
+      <span>Accessories</span>
+    </h4>
+  </div>
+</div>
+
+<div class="main__slider">
+  <div class="container">
+    <div class="row__slider">
+      <div class="menu">
+        <h3>ALL CATEGORIES</h3>
+        <h5
+          [ngClass]="{ activeItem: accessoriesValue == 1 }"
+          (click)="handleAccessories(1)"
+          class="cat__item"
+        >
+          Accesories
+        </h5>
+        <h5
+          [ngClass]="{ activeItem: accessoriesValue == 2 }"
+          (click)="handleAccessories(2)"
+          class="cat__item"
+        >
+          Cables & Docks
+        </h5>
+        <h5
+          [ngClass]="{ activeItem: accessoriesValue == 3 }"
+          (click)="handleAccessories(3)"
+          class="cat__item"
+        >
+          Cases & Films
+        </h5>
+        <h5
+          [ngClass]="{ activeItem: accessoriesValue == 4 }"
+          (click)="handleAccessories(4)"
+          class="cat__item"
+        >
+          Charging Devices
+        </h5>
+        <h5
+          [ngClass]="{ activeItem: accessoriesValue == 5 }"
+          (click)="handleAccessories(5)"
+          class="cat__item"
+        >
+          Connected Home
+        </h5>
+        <h5
+          [ngClass]="{ activeItem: accessoriesValue == 6 }"
+          (click)="handleAccessories(6)"
+          class="cat__item"
+        >
+          Headphones
+        </h5>
+      </div>
+      <div class="slider">
+        <div class="slider2">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide slider3"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="assets/img/img1.jpg" class="d-block" alt="..." />
+                <div class="img__content">
+                  <h1>Xiaomi</h1>
+                  <p>Smart Desh ka Smartphone</p>
+                  <a href="#">SHOP NOW</a>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="assets/img/img2.jpg" class="d-block" alt="..." />
+                <div class="img__content">
+                  <h1>Samsung Galaxy</h1>
+                  <p>We create the world.</p>
+                  <a href="#">SHOP NOW</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/img3.jpg" class="d-block" alt="..." />
+                <div class="img__content">
+                  <h1>Xiaomi</h1>
+                  <p>Smart Desh ka Smartphone</p>
+                  <a href="#">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
